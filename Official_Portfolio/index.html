@@ -1,0 +1,505 @@
+<!DOCTYPE html lang="en">
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Brian's Portfolio</title>
+	<link rel="icon" type="icon/png" href="img/logo.png">
+
+	<style type="text/css">
+		#overlay{
+			position: absolute;
+			margin: 0px;
+			padding: 0px;
+			opacity: 0;
+		}
+
+#Loading {
+	width: 49px;
+	height: 49px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#Loading:before {
+	content: '';
+	width: 49px;
+	height: 5px;
+	background: rgb(0,0,0);
+	opacity: 0.1;
+	position: absolute;
+	top: 58px;
+	left: 0;
+	border-radius: 50%;
+	animation: shadow 0.58s linear infinite;
+		-o-animation: shadow 0.58s linear infinite;
+		-ms-animation: shadow 0.58s linear infinite;
+		-webkit-animation: shadow 0.58s linear infinite;
+		-moz-animation: shadow 0.58s linear infinite;
+}
+#Loading:after {
+	content: '';
+	width: 49px;
+	height: 49px;
+	background: #337ab7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 3px;
+	animation: cssload-animate 0.58s linear infinite;
+		-o-animation: cssload-animate 0.58s linear infinite;
+		-ms-animation: cssload-animate 0.58s linear infinite;
+		-webkit-animation: cssload-animate 0.58s linear infinite;
+		-moz-animation: cssload-animate 0.58s linear infinite;
+}
+
+
+
+@keyframes cssload-animate {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 39px;
+	}
+	75% {
+		transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		transform: translateY(0) rotate(90deg);
+	}
+}
+
+@-o-keyframes cssload-animate {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		-o-transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		-o-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 39px;
+	}
+	75% {
+		-o-transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		-o-transform: translateY(0) rotate(90deg);
+	}
+}
+
+@-ms-keyframes cssload-animate {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		-ms-transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		-ms-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 39px;
+	}
+	75% {
+		-ms-transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		-ms-transform: translateY(0) rotate(90deg);
+	}
+}
+
+@-webkit-keyframes cssload-animate {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		-webkit-transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		-webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 39px;
+	}
+	75% {
+		-webkit-transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		-webkit-transform: translateY(0) rotate(90deg);
+	}
+}
+
+@-moz-keyframes cssload-animate {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		-moz-transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		-moz-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 39px;
+	}
+	75% {
+		-moz-transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		-moz-transform: translateY(0) rotate(90deg);
+	}
+}
+
+@keyframes shadow {
+	0%,
+	100% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1);
+	}
+}
+
+@-o-keyframes shadow {
+	0%,
+	100% {
+		-o-transform: scale(1, 1);
+	}
+	50% {
+		-o-transform: scale(1.2, 1);
+	}
+}
+
+@-ms-keyframes shadow {
+	0%,
+	100% {
+		-ms-transform: scale(1, 1);
+	}
+	50% {
+		-ms-transform: scale(1.2, 1);
+	}
+}
+
+@-webkit-keyframes shadow {
+	0%,
+	100% {
+		-webkit-transform: scale(1, 1);
+	}
+	50% {
+		-webkit-transform: scale(1.2, 1);
+	}
+}
+
+@-moz-keyframes shadow {
+	0%,
+	100% {
+		-moz-transform: scale(1, 1);
+	}
+	50% {
+		-moz-transform: scale(1.2, 1);
+	}
+}
+	</style>
+</head>
+	<body>
+		<div id="Loading"></div>
+		<!-- Loading page  -->
+		<div id="overlay">
+
+		<!-- Download Button -->
+		<div class="Hire-Me">
+			<div id="linkedin"><a href="https://www.linkedin.com/in/brian-shisanya-7a5a6516a/" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+			<div id="github"><a href="https://github.com/Minotauro49" target="_blank"><i class="fa fa-github"></i></a></div>
+			<div id="resume"><a href="Projects/CoverLetterAndResume_Developer2018.pdf" download>Download Resume <i class="fa fa-download"></i></div>
+		</div>
+
+
+		<!-- <a href="##" target="_blank"><div class="Sticky_ViewProjects">More Projects&emsp;<i class="fa fa-eye"></i></div></a> --><!--  more projects coming soon -->
+
+
+
+		<div class="container-fluid">
+			<div class="text-center">
+				<a href="img/FullCoverPhoto.jpg" target="_blank"><img src="img/MyCoverPhoto.jpg" width=200 class="profile-pic" title="View full size"></a>
+				<h1><strong>Brian Shisanya</strong></h1>
+			 	<h3>A passion driven self-taught Software Developer & Designer <br></h3>
+			</div>
+
+			<div class="row row-grey">
+			    <div class="col-sm-8 col-sm-offset-2">
+			    	
+					<div class="slider-container">
+						<ul class="main-page">
+							<h2>A little About Me</h2>
+							<p>
+								<br>
+								I love building things! I'm a self-taught Software Developer & Designer with a set of design chops. Currently living in Hobart on an island you may well know it as Tasmania and yes, it’s a part of Australia. I guess for us to really connect, I’ve got to tell you a little bit of my history.<br><br>
+
+								It all started with a love for technology that up swinged the trend that lead to this life of mine. Over the period I managed to learn a couple of web and software programming languages through various online platforms. As for the moment I’m learning C# libraries and python Beautiful Soup module.<br><br>
+							</p>
+
+							<h3>Experience & Recent Projects</h3>
+							<p>
+								My first taste of professional experience happened during the course of this year. I made a video production inventory system for the video production teachers, it allows students to borrow production equipment, minimizing the need for long paper work; a routine they had to go through. It also lightened the work load for teachers to keep track of the stock level in their inventory.<br><br>
+
+								Currently, once again I’m working on a school Science Department of Education inventory system. I’m in a team of three with the aim, to automate the process the science Tech-lab staff go through every end of year, to generate a report regarding credentials and the stock level of chemicals.<br><br>
+							</p>
+								
+							<h3>Interests</h3>
+							<p>
+								I do what I do because I love it. I like the industry. I love to collaborate with people and solve complex problems. I embrace the field. I love and would want to make software that betters other people’s lives.<br><br>
+
+								When I’m not coding, watching, playing games or pushing pixels around I can b
+								e found cooking, eating, participating in sports or sometimes sitting somewhere quietly and thinking about life in general.
+							</p>
+
+							
+						</ul>
+			    	</div>
+				</div>
+			</div>
+
+
+			<div class="row row-white">
+			    <div class="col-sm-8 col-sm-offset-2">
+
+			    	<div class="row work-item-row">
+			    		<div class="col-lg-8 col-lg-push-4">
+			    			<img src="img/videoproduction.png" class="img-responsive center-block">
+			    		</div>
+			    		<div class="col-lg-4 col-lg-pull-8">
+			    			<h2><a href="Projects\VideoProduction\index.html" target="blank">Video production</a></h2>
+			    			<h3>Inventory System</h3>
+			    			<p>A web application built with a simple goal in mind. To allow students to borrow Video production equipment, in the efforts of replacing the slow paper version of its former self.</p>
+			    			<h3>Technology</h3>
+			    			<p>Video production Inventory System uses Bootstrap3 for a fast layout, with JavaScript to enhance student’s interaction and responsiveness. On the backend, it uses PHP and Ajax for dynamic mail handling. The client “The Video Production Teacher” required the ability to see what the student had borrowed and automatically deduct the number of pre-existing equipment into an excel worksheet. Microsoft VBA was used to interact with a firebase API to grab data that got pre-set by the web application. a json API was used to converter json format data to VBA.</p>
+			    		</div>
+		    		</div>
+		    		<div class="row text-center">
+		    			<div class="col-xs-12">
+			    			<img src="img/techlogos/javascript.png" class="techlogo" width="100">
+			    			<img src="img/techlogos/bootstrap.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/ajax.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/php.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/firebase.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/VBA.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/json.png" class="techlogo" width="100">
+		    			</div>
+		    		</div>
+		    		<div class="row text-center">
+		    			<a class="btn btn-source" href="https://github.com/Minotauro49/VideoProduction" target="blank">View Source&emsp;<i class="fa fa-github"></i></a>
+		    			<a class="btn btn-launch" href="Projects\VideoProduction\index.html" target="blank">Launch&emsp;<i class="fa fa-rocket"></i></a>
+	    			</div>
+					</div>
+			</div>
+
+
+			<div class="row row-grey">
+			    <div class="col-sm-8 col-sm-offset-2">
+
+			    	<div class="row work-item-row">
+			    		<div class="col-lg-8">
+			    			<img src="img/AutoTrader.png" class="img-responsive center-block">
+			    		</div>
+			    		<div class="col-lg-4">
+			    			<h2><a href="Projects\AutoTrade\AutoTrade.zip" target="blank">AutoTrader</a></h2>
+			    			<p>A system who’s purpose, to give its respected user a general look over a particular shares trend in the ASX share market game. Although not done its intended to have the ability for automatic trading.</p>
+			    			<h3>Technology</h3>
+			    			<p>Auto trade uses visual C# and Bunifu Framework for layout and dynamic interaction. On the back-end it uses Python Beautiful Soup Module to web scrape from the respected user ASX account logins and returns the data in a Json format for C# interaction and useability. </p>
+			    		</div>
+		    		</div>
+		    		<div class="row text-center">
+		    			<div class="col-xs-12">
+		    				<img src="img/techlogos/python.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/json.png" class="techlogo" width="100">
+		    				<img src="img/techlogos/VisualCshap.png" class="techlogo" width="100">
+		    			</div>
+		    		</div>
+		    		<div class="row text-center">
+		    				<a class="btn btn-source" href="https://github.com/Minotauro49/CSharp-AutoTrader" target="blank">View Source&emsp;<i class="fa fa-github"></i></a>
+		    				<a class="btn btn-launch" href="Projects\AutoTrade\AutoTrade.zip" >Launch&emsp;<i class="fa fa-rocket"></i></a>
+
+	    			</div>
+					</div>
+			</div>
+
+
+
+			<div class="row row-white">
+			    <div class="col-sm-8 col-sm-offset-2">
+			    	<div class="row work-item-row">
+			    		<div class="col-lg-8 col-lg-push-4">
+			    			<img src="img/BattleShip.png" class="img-responsive center-block">
+			    		</div>
+			    		<div class="col-lg-4 col-lg-pull-8">
+			    			<h2><a href="Projects\Battle_Ship\Index.html" target="blank">Battle Ship</a></h2>
+			    			<p>A game that was heavily inspired by space invaders. It was one of my first game to build and complete to a satisfactory level. In the process of developing, it forced me to deepen my knowledge in arrays and overall a general understanding in JavaScript. </p>
+			    			<h3>Technology</h3>
+			    			<p>Battle Ship is a game built with just JavaScript for player and enemy mechanics.</p>
+			    		</div>
+			    	</div>
+		    		<div class="row text-center">
+		    			<div class="col-xs-12">
+		    				<img src="img/techlogos/javascript.png" class="techlogo" width="100">
+		    			</div>
+		    		</div>
+		    		<div class="row text-center">
+		    				<a class="btn btn-source" href="https://github.com/Minotauro49/Battle-ship" target="blank">View Source&emsp;<i class="fa fa-github"></i></a>
+		    				<a class="btn btn-launch" href="Projects\Battle_Ship\Index.html" target="blank">Launch&emsp;<i class="fa fa-rocket"></i></a>
+	    			</div>
+					</div>
+			</div>
+
+
+
+			<div class="row row-grey">
+			    <div class="col-sm-8 col-sm-offset-2">
+
+			    	<div class="row work-item-row">
+			    		<div class="col-lg-8">
+			    			<img src="img/pythonDrawing.png" class="img-responsive center-block">
+			    		</div>
+			    		<div class="col-lg-4">
+			    			<h2><a href="Projects\PythonAplication\drawing.zip">PyDraw</a></h2>
+			    			<p>This is an application inspired by window paint program.</p>
+			    			<h3>Technology</h3>
+			    			<p>PyDraw is a desktop application built entirely in python using Tkinter module for the graphical user interface</p>
+			    		</div>
+					</div>
+					<div class="row text-center">
+						<div class="col-xs-12">
+							<img src="img/techlogos/python.png" class="techlogo" width="100">
+						</div>
+					</div>
+					<div class="row text-center">
+							<a class="btn btn-source" href="https://github.com/Minotauro49/Python-Drawing-Application" target="blank">View Source&emsp;<i class="fa fa-github"></i></a>
+							<a class="btn btn-launch" href="Projects\PythonAplication\drawing.zip" download>Launch&emsp;<i class="fa fa-rocket"></i></a>
+					</div>
+					</div>
+			</div>
+
+			</div>
+
+			<div class="row row-tools row-white">
+			    <div class="col-sm-12 text-center">
+
+			    	<h3>Tools I Use</h3>
+    				<img src="img/tool-logos/GravitDesigner.png" class="techlogo" width="120" title="Gravit Designer">
+    				<img src="img/tool-logos/visualStudio2017.png" class="techlogo" width="120" title="Visual Studio 2017">
+    				<img src="img/tool-logos/SublimeText.png" class="techlogo" width="100" title="SublimeText">
+    				<img src="img/tool-logos/BoostrapStudio.png" class="techlogo" width="120" title="Boostrap Studio">
+    				<img src="img/tool-logos/github.png" class="techlogo" width="120" title="github">
+					</div>
+			</div>
+
+			<div class="row row-footer text-center">
+				<div class="col">
+
+  				<div>
+  					<h3>I'm available for work, get in touch:</h3>
+  					<h4><strong>Email:</strong> brian.shisanya2000@gmail.com</h4>
+  					<h4><strong>Phone:</strong> 0412367864</h4>
+  					<h4><strong>Or</strong></h4>
+				</div>
+
+
+				  <!-- CONTACT PAGE -->
+				  	<div class="CONTACT">
+				  <!-- ---Contact information---- -->
+				  	<form> 
+				  		<label id="successMessage"></label><br>
+				  		<input type="text" name="name" required id="Name" placeholder="Name"><br>
+				  		<input type="email" name="email" required id="Email" placeholder="Email"><br>
+				  		<input type="subject" name="subject" required id="Subject"  placeholder="Subject"><br>
+				  		<textarea placeholder="Your message" required id="textarea"></textarea><br>
+				  		<input type="submit" id="Submit" value="Send mail" onClick="ajax.send(event)" class="btn">
+				  	</form>
+				  	</div>
+				
+				</div>
+			</div>
+
+					<!-- Scroll Up  -->
+			<div id="scrollUp" style="display: none;"><i class="fa fa-arrow-up" onclick="ScrollTop(event)"></i></div>
+
+		<footer>
+			<i>Brian Shisanya<strong>@2018</strong></i>
+		</footer>
+	</div>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/Main.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- remember to change this into a //ajax.. -->
+
+	<!-- send mail to me -->
+	<script type="text/javascript">
+		var ajax = {
+			send: function(e) {
+				var submit = document.getElementById('Submit'),
+					nameTag = null,
+					successMessage = document.getElementById("successMessage");
+					textarea = document.getElementById('textarea'),
+					email = document.getElementById('Email'),
+					subject = document.getElementById('Subject'),
+					namebar = document.getElementById('Name'),
+					form = document.getElementsByTagName("FORM")[0],
+					dict = {};
+
+				if (form.checkValidity() == true) {
+					e.preventDefault();
+
+					dict = {
+						"Name":namebar.value,
+						"Email":email.value,
+						"Subject":subject.value,
+						"Message":textarea.value,
+					};
+
+					var userName = $("input[name=name]").val();
+					var userEmail = $("input[name=email]").val();
+					var userSubject = $("input[name=subject]").val();
+					var userComments = $("textarea").val();
+			
+						// sending
+					successMessage.style.animation = "textanim 1.5s linear infinite";
+					successMessage.innerHTML = "Email is sending...";
+					successMessage.style.display = "block";
+					email.style.display = "none";
+					textarea.style.display = "none";
+					submit.style.display = "none";
+					namebar.style.display = "none";
+					subject.style.display = "none";
+
+					$.post("js/Sendmail.php", {
+						name: userName, email: userEmail, comments: userComments, subject: userSubject
+					}, function(data) {
+
+						if(data == "true") {
+							successMessage.style.animation = "none";
+							if (dict["Name"].indexOf(" ") >= 0) {nameTag = dict["Name"].substring(0, dict["Name"].indexOf(" "));
+							}else{nameTag = "";}
+
+							successMessage.innerHTML ="Thanks "+nameTag+"!<br>Your message was successfully sent. I will contact you very soon!";
+	
+						} else {
+							successMessage.style.color = "red";
+							successMessage.style.display = "block";
+							successMessage.innerHTML= "Something went wrong.<br>Please try refreshing this page and try again.<br>Alternatively use one of my contacts above.";
+						}
+				});
+			}
+		}
+	}
+
+
+	</script>
+	</body>
+</html>

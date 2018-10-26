@@ -1,0 +1,307 @@
+
+body {
+	transition: all 0.3s;
+	margin-top:100px;
+	background: rgb(240,240,240);
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.8;
+	word-spacing: 1.5;	
+	overflow: hidden;
+}
+
+
+h1, h2, h3, h4{
+	color:#4A4E69;
+	font-weight: 300;
+}
+
+p {
+	color: #4A4E69;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+
+.profile-pic {
+  	border-radius: 50%;
+  	cursor:pointer;
+}
+
+
+.m-t-1 {
+	margin-top:1em;
+}
+
+.p-t-1 {
+	padding-top:1em;
+}
+
+
+.about-me {
+	margin-top:25px;
+}
+
+nav {
+	display: flex;
+}
+
+.navbar-default {
+	background-color: #93ca44;
+	border: none;
+	border-radius:0;
+}
+
+.navbar-text a.navbar-link {
+	color:white;
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+
+.row-grey {
+	position: relative;
+	transition: all 1s;
+	background-color: lightgrey;
+	-webkit-clip-path: polygon(0 0%, 100% 40px, 100% 96%, 0% 100%);
+	clip-path: polygon(0 0%, 100% 40px, 100% 96%, 0% 100%);
+	padding: 65px 10px;
+	height: auto;
+}
+
+
+
+.row-white {
+	padding: 65px 10px;
+}
+
+.row-footer {
+	padding: 65px 10px;
+}
+
+.row-tools {
+  padding: 50px 0;
+}
+
+.linkedin-btn {
+	box-shadow: 0px 2px 5px 1px lightgrey;
+	padding: 12px;
+	border-radius: 5px;
+}
+
+.btn-launch,.btn-source{
+	transition: all 0.2s;
+	width:100%;
+	max-width:200px;
+	background-color:#549657;
+	color:white;
+	box-shadow: 0px 2px 5px 1px darkgrey;
+}
+
+
+.btn-source{background-color:#337AB7}
+.btn-source:hover{background:#296292;color: white;}
+.btn-launch:hover{background:#437846;color: white;}
+
+
+#linkedin:active,
+#github:active,
+#resume:active,
+.btn-launch:active
+.btn-source:active{
+	background:#ff9800;color: white;
+}
+
+.col-sm-12 img{cursor: pointer;margin-left:20px; }
+
+.main-page strong{
+	color: #4A4E69;
+}
+
+
+
+/*------------Hire-Me--------------*/
+.Hire-Me{
+	position: fixed;
+	transition: all 0.3s;
+	z-index: 1;
+	transform-origin:top; 
+	top: 0%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	width: 100%
+}
+
+
+#linkedin,
+#github,
+#resume{
+	position: relative;
+	font-size: 40px;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
+	line-height:0.1;
+	word-spacing: 0.1;
+	padding: 5px 15px 5px;
+	background-color: #337ab7;
+	margin: -3px;
+}
+
+#linkedin a,
+#github a{color: white;}
+#github{background-color: #4A4E69}
+
+#linkedin:hover,
+#github:hover,
+#resume:hover{
+	opacity: 0.9;
+}
+
+#linkedin{border-radius: 0px 0px 0px 5px;}
+
+/*Download Resume */
+#resume{
+	background-color:#549657;
+	padding: 20px 30px;
+	font-size: 12px;
+	top: -11px;
+	margin-left:-3px; 
+}
+
+#resume a{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+
+/*More projects link*/
+/*.Sticky_ViewProjects{background: #4CAF50;left: 0%;top: 50%;transform: translateX(-155px);}
+.Sticky_ViewProjects:hover{background: #437846;transform: translateX(0px);}
+.download:active,.Sticky_ViewProjects:active{font-size: 15px;}
+*/
+
+
+
+/*--------------CONTACT pages-------------------*/
+.CONTACT h3{
+	font-size: 20px;
+}
+
+
+.CONTACT input,.CONTACT textarea{
+	min-height: 50px;
+	min-width: 300px;
+	position: relative;
+	max-width:800px;
+	width: 50%;
+	border:none;
+	height: 50px;
+	border-radius: 2px;
+	padding-left: 10px;
+	display:inline-block;
+	margin-top:2px;
+	background:lightgrey;
+}
+
+
+.CONTACT textarea{
+	height: 200px;
+}
+
+
+#Submit{
+	position: relative;
+	transition: transform 0.2s;
+	background-color: #337ab7; 
+	color: white;
+}
+
+#Submit:active{
+	background: #ff9800;
+}
+
+
+#successMessage{
+	color:#4caf50; 
+	display: none;
+}
+
+/*text animation */
+@keyframes textanim{
+    from {color: #4caf50}
+    to {color: #337ab7}
+}
+
+
+
+strong{
+	color: #337ab7;
+}
+
+.row-footer{
+	margin-top: 0px;
+}
+
+
+
+
+/*Scroll up*/
+#scrollUp{
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	top: 90%;
+	left: -80px;
+	font-size: 20px;
+	color: #337ab7;
+}
+
+#scrollUp i{transition: all 0.3s;transition-timing-function:cubic-bezier(0.99, 0.98, 0, 0.95);}
+
+
+#scrollUp i:hover{
+	transform:translateY(-5px);
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+/*Footer */
+footer{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+ /*Change screen size */
+
+@media only screen and (max-width: 794px) {
+	.CONTACT input,.CONTACT textarea{width: 90%;}
+	#scrollUp{display: none;}
+}
+
+@media only screen and (max-width: 500px) {
+		.Hire-Me{text-align: center;}
+		#resume{border-radius:0px 0px 5px 0px; 
+}
+}
+
+/*Control over animations based on screen type*/
+	.inform,
+	.check,
+	#Source,
+	#Preview,
+	.main-page h4,
+	.download{
+		transition: all 0.3s;
+	}
+
+
+
